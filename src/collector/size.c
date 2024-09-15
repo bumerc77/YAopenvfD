@@ -12,7 +12,7 @@ You should have received a copy of the GNU General Public License along with thi
 #include "collector/size.h"
 
 #define COLLECTOR_SIZE_SUFFIXES   "BKMGTPEZY"
-static const unsigned short collector_len_size_suffixes = sizeof(COLLECTOR_SIZE_SUFFIXES);
+static const unsigned short collector_len_size_suffixes = strlen(COLLECTOR_SIZE_SUFFIXES);
 static const char collector_size_suffixes[] = COLLECTOR_SIZE_SUFFIXES;
 
 size_t collector_size_to_human_readable(size_t size, char *suffix) {
